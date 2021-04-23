@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" />
+    <title> Custom CPU Emulator </title>
+</head>
+
+<body>
+
+    <div id="board" class="big-parent-container">
+
+        <div class="control-panel">
+            <h4> Control Panel </h4>
+            <button id="clockControl" class="clock-control"> Start clock
+            </button>
+            <p> Set Frequency of CPU Clock (Higher is faster) </p>
+            <input class="clock-hz" type="text" value="2.4" />
+
+            <div class="InstructionsQueue">
+                <h4>Insert Your Instructions Here</4>
+
+                    <textarea id="instructionInput" cols="30" rows="8"
+                        placeholder="Add #7"></textarea>
+                    <button id="submitInstructions"> Load Instructions </button>
+            </div>
+
+        </div>
+
+        <div class="instructions">
+            
+            <h4> The CPU receives the following instructions </h4>
+
+            <table>
+                <tr>
+                    <td>Mnemonic and example </td>
+                    <td>OPCODE</td>
+                </tr>
+                <tr>
+                    <td>ADD #7</td>
+                    <td> 0 0 0 0</td>
+                </tr>
+                <tr>
+                    <td>SUB #7</td>
+                    <td> 0 0 0 1</td>
+                </tr>
+                <tr>
+                    <td>AND #7</td>
+                    <td> 0 0 1 0</td>
+                </tr>
+                <tr>
+                    <td> OR #7</td>
+                    <td> 0 0 1 1</td>
+                </tr>
+                <tr>
+                    <td> ADD 7</td>
+                    <td> 1 0 0 0</td>
+                </tr>
+                <tr>
+                    <td>SUB 7</td>
+                    <td>1 0 0 1</td>
+                </tr>
+                <tr>
+                    <td>AND 7</td>
+                    <td>1 0 1 0</td>
+                </tr>
+                <tr>
+                    <td>OR 7</td>
+                    <td> 1 0 1 1</td>
+                </tr>
+                <tr>
+                    <td>NOP</td>
+                    <td>1 1 1 1</td>
+                </tr>
+            </table>
+
+        </div>
+
+
+
+        <script src="scripts/utils.js"></script>
+
+        <script src="scripts/components/register.js"></script>
+        <!-- Componentes -->
+        <script src="scripts/components/ram.js"></script>
+        <script src="scripts/components/mar.js"></script>
+        <script src="scripts/components/mdr.js"></script>
+        <script src="scripts/components/mir.js"></script>
+        <script src="scripts/components/rom.js"></script>
+        <script src="scripts/components/acc.js"></script>
+        <script src="scripts/components/pc.js"></script>
+        
+        <script src="scripts/components/alu.js"></script>
+        <script src="scripts/components/controlUnit.js"></script>
+
+        <script src="scripts/components/clock.js"></script>
+
+        <script src="scripts/InstructionsQueue.js"></script>
+        <script src="scripts/index.js"></script>
+</body>
+
+</html>
