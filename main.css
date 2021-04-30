@@ -1,0 +1,79 @@
+html {
+	background-color: #512DA8;
+	width: 100%;
+	font-weight: 700;
+}
+
+div.register-container {
+	border: 2px black solid;
+	padding: 10px;
+	background-color: #9575CD;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+div.register-container > h4 {
+	text-align: center;
+	margin: 5px 0;
+	font-size: large;
+}
+
+div.register-container > div.register-memory-container {
+	display: flex;
+	flex-direction: column;
+}
+
+div.register-container div.memory-address {
+	display: flex;
+	justify-content: center;
+}
+
+div.register-container div.memory-address > p {
+	margin-right: 7px;
+}
+
+div.register-container div.bit-container {
+	border: 2px black solid;
+	width: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	background-color: white;
+}
+
+div#board.big-parent-container {
+	display: grid;
+	grid-gap: 1rem;
+	max-width: 100vw;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-areas:
+		"ROM ROM ROM PC RAM RAM ACCUM README README"
+		"ROM ROM ROM MAR RAM RAM CONTROLS README README"
+		"ROM ROM ROM MIR RAM RAM CONTROLS README README"
+		"ROM ROM ROM MDR RAM RAM CONTROLS README README";
+}
+
+div.control-panel {
+	grid-area: CONTROLS;
+	border: 2px solid black;
+	background-color: #9575CD;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+textarea {
+	resize: none;
+	overflow: hidden;
+	background-color:white;
+}
+
+pre {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+}
