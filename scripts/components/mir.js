@@ -1,4 +1,4 @@
-var mir = new Register("MIR", 1, 4);
+var mir = new Register("MIR", 1, 3);
 board.appendChild(mir.generateHTML());
 
 mir.setUpdate(({ en, components }) => {
