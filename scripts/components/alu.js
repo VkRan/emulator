@@ -12,7 +12,7 @@ const getALU = () => {
 	const update = ({ components }) => {};
 
 	const calculate = ({ components }) => {
-		const opcode = components.mir.read().join("");
+		const opcode = "0" + components.mir.read().join("");
 		const data = components.mdr.read();
 		const acc = components.acc;
 		return operations[opcode](acc.read(), data);
