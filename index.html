@@ -10,72 +10,24 @@
 
 <body>
 
-    <div id="board" class="big-parent-container">
+        <div id="board" class="big-parent-container">
 
-        <div class="control-panel">
-            <h4> Control Panel </h4>
-            <button id="clockControl" class="clock-control"> Start clock
-            </button>
-            <p> Set Frequency of CPU Clock (Higher is faster) </p>
-            <input class="clock-hz" type="text" value="2.4" />
+            <div class="control-panel">
+                <h4> Control Panel </h4>
+                <button id="clockControl" class="clock-control"> Start clock
+                </button>
+                <p> Set Frequency of CPU Clock (Higher is faster) </p>
+                <input class="clock-hz" type="text" value="2.4" />
 
-            <div class="InstructionsQueue">
-                <h4>Insert Your Instructions Here</4>
+                <div class="InstructionsQueue">
+                    <h4>Insert Your Instructions Here</4>
 
-                    <textarea id="instructionInput" cols="30" rows="8"
-                        placeholder="Add #7"></textarea>
-                    <button id="submitInstructions"> Load Instructions </button>
+                        <textarea id="instructionInput" cols="30" rows="8"
+                            placeholder="Add #7"></textarea>
+                        <button id="submitInstructions"> Load Instructions </button>
+                </div>
+
             </div>
-
-        </div>
-
-        <div class="instructions">
-            
-            <h4> The CPU receives the following instructions </h4>
-
-            <table>
-                <tr>
-                    <td>Mnemonic and example </td>
-                    <td>OPCODE</td>
-                </tr>
-                <tr>
-                    <td>ADD #7</td>
-                    <td> 0 0 0 0</td>
-                </tr>
-                <tr>
-                    <td>SUB #7</td>
-                    <td> 0 0 0 1</td>
-                </tr>
-                <tr>
-                    <td>AND #7</td>
-                    <td> 0 0 1 0</td>
-                </tr>
-                <tr>
-                    <td> OR #7</td>
-                    <td> 0 0 1 1</td>
-                </tr>
-                <tr>
-                    <td> ADD 7</td>
-                    <td> 1 0 0 0</td>
-                </tr>
-                <tr>
-                    <td>SUB 7</td>
-                    <td>1 0 0 1</td>
-                </tr>
-                <tr>
-                    <td>AND 7</td>
-                    <td>1 0 1 0</td>
-                </tr>
-                <tr>
-                    <td>OR 7</td>
-                    <td> 1 0 1 1</td>
-                </tr>
-                <tr>
-                    <td>NOP</td>
-                    <td>1 1 1 1</td>
-                </tr>
-            </table>
-
         </div>
 
 
